@@ -1,0 +1,269 @@
+/* RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Nguyen Thanh Dat
+  ID: 3975867
+  Acknowledgement: Youtube */
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Roboto&family=Work+Sans:wght@400;500;800&display=swap');
+
+* {
+      margin: 0;
+      padding: 0;
+}
+  
+body {
+      background-color: #F6F4EB;
+      font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    height: 70px;
+    background-image: linear-gradient(0, #91C8E4, #749BC2);
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+/* Logo Image */
+.navbar img {
+    height: 30px;
+}
+/* Header Setup */
+.header,
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Navigation Bar */
+.list {
+    list-style: none;
+}
+
+.item {
+    margin: 0 12px;
+    position: relative;
+}
+
+.item, .link {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 100;
+    text-decoration: none;
+    color: white;
+}
+
+.item:hover, .link:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.item.line::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 15px;
+    background-color: white;
+    right: -14px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.container {
+    margin: 60px;
+}
+
+h1 {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+}
+/* Dropdown */
+.dropdown {
+    display: flex;
+    border: 1px solid #749BC2;
+    align-items: center;
+    margin: 10px 0px;
+    padding: 5px;
+}
+
+#dropdown {
+    margin-left: 15px;
+    background-color: rgb(145, 200, 228);
+    color: #F6F4EB;
+    width: 200px;
+    height: 25px;
+    border-radius: 10px;
+    font-size: 14px;
+    border: 1px solid transparent;
+    outline: none;
+}
+/* Name */
+.name {
+    display: flex;
+    border: 1px solid #749BC2;
+    align-items: center;
+    margin: 10px 0px;
+    padding: 5px;
+}
+
+#name {
+    margin-left: 15px;
+    background-color: rgb(145, 200, 228);
+    border-radius: 5px;
+    border: 1px solid transparent;
+    margin-left: 20px;
+    outline: none;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.5;
+    width: 15%;
+    height: 20px;
+}
+/* Email */
+.email {
+    display: flex;
+    border: 1px solid #749BC2;
+    align-items: center;
+    margin: 10px 0px;
+    padding: 5px;
+}
+
+#email {
+    margin-left: 15px;
+    background-color: rgb(145, 200, 228);
+    border-radius: 5px;
+    border: 1px solid transparent;
+    margin-left: 20px;
+    outline: none;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.5;
+    width: 15%;
+    height: 20px;
+}
+/* Phone */
+.phone {
+    display: flex;
+    border: 1px solid #749BC2;
+    align-items: center;
+    margin: 10px 0px;
+    padding: 5px;
+}
+
+#phone {
+    margin-left: 15px;
+    background-color: rgb(145, 200, 228);
+    border-radius: 5px;
+    border: 1px solid transparent;
+    margin-left: 20px;
+    outline: none;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.5;
+    width: 15%;
+    height: 20px;
+}
+/* CheckBox */
+.checkbox {
+    display: flex;
+    border: 1px solid #749BC2;
+    align-items: center;
+    margin: 10px 0px;
+    padding: 5px;
+}
+
+#box {
+    margin-left: 30px;
+    margin-right: 5px;
+}
+/* Choose */
+.radio {
+    display: flex;
+    border: 1px solid #749BC2;
+    align-items: center;
+    margin: 10px 0px;
+    padding: 5px;
+}
+/* Checkbox */
+#check {
+    margin-left: 30px;
+    margin-right: 5px;
+}
+/* Note */
+.notes {
+    display: flex;
+    border: 1px solid #749BC2;
+    align-items: center;
+    margin: 10px 0px;
+    padding: 5px;
+}
+
+.note {
+    background-color: rgb(145, 200, 228);
+    color: black;
+    padding: 1em;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    margin-left: 20px;
+    outline: none;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.5;
+    width: 50%;
+    height: 50px;
+    transition: all 0.2s;
+}
+/* Button */
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+    padding: 5px;
+}
+
+#button {
+    margin: 10px 200px;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: royalblue;
+    color: white;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+.note:hover {
+    cursor: pointer;
+    background-color: rgba(145, 200, 228, 0.7);
+}
+/* Footer Setup */
+.footer {
+    height: 70px;
+    background-image: linear-gradient(0, #91C8E4, #749BC2);
+}
+
+.footer, .navbar1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    
+}
+
+@media (min-width: 739px) {
+    
+}

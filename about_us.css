@@ -1,0 +1,114 @@
+/* RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Nguyen Thanh Dat
+  ID: 3975867
+  Acknowledgement: Youtube */
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Roboto&family=Work+Sans:wght@400;500;800&display=swap');
+
+* {
+      margin: 0;
+      padding: 0;
+}
+  
+body {
+      background-color: #F6F4EB;
+      font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    height: 70px;
+    background-image: linear-gradient(0, #91C8E4, #749BC2);
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+/*  Logo image */
+.navbar img {
+    height: 30px;
+}
+/* Header Setup */
+.header,
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Navigation Bar */
+.list {
+    list-style: none;
+}
+
+.item {
+    margin: 0 12px;
+    position: relative;
+}
+
+.item, .link {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 100;
+    text-decoration: none;
+    color: white;
+}
+
+.item:hover, .link:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.item.line::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 15px;
+    background-color: white;
+    right: -14px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* Content */
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    margin: 20px;
+    width: 500px;
+    
+}
+
+.content h2 {
+    text-align: center;
+}
+
+/* Footer Setup */
+.footer {
+    height: 70px;
+    background-image: linear-gradient(0, #91C8E4, #749BC2);
+}
+
+.footer, .navbar1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+@media (min-width: 767px) {
+    
+}

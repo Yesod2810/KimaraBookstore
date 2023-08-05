@@ -1,0 +1,164 @@
+/* RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Nguyen Thanh Dat
+  ID: 3975867
+  Acknowledgement: Youtube */
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Roboto&family=Work+Sans:wght@400;500;800&display=swap');
+
+* {
+      margin: 0;
+      padding: 0;
+}
+  
+body {
+      background-color: #F6F4EB;
+      font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    height: 70px;
+    background-image: linear-gradient(0, #91C8E4, #749BC2);
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+/* Logo image */
+img {
+    height: 30px;
+}
+/* Header Setup */
+.header,
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Navigation Bar */
+.list {
+    list-style: none;
+}
+
+.item {
+    margin: 0 12px;
+    position: relative;
+}
+
+.item, .link {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 100;
+    text-decoration: none;
+    color: white;
+}
+
+.item:hover, .link:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.item.line::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 15px;
+    background-color: white;
+    right: -14px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* Book type category Heading */
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading h1 a {
+    font-size: 40px;
+    text-decoration: none;
+    color: #4682A9;
+}
+/* Book type category Product */
+.title {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.comic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #4682A9;
+    width: 33.33333333333333333333333%;
+    padding: 2%;
+}
+
+.comic img {
+    width: 250px;
+    height: 400px;
+}
+
+.comic a {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #000;
+}
+
+.comic p {
+    font-size: 20px;
+    color: #749BC2;
+}
+
+.comic:hover, .detail:hover {
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+/* Media */
+.media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+}
+
+.content {
+    width: 500px;
+    height: fit-content;
+}
+
+/* Footer Setup */
+.footer {
+    height: 70px;
+    background-image: linear-gradient(0, #91C8E4, #749BC2);
+}
+
+.footer, .navbar1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 1024px) {
+    
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    
+}
+
+@media (min-width: 739px) {
+    
+}

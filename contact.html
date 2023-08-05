@@ -1,0 +1,120 @@
+<!--   RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Nguyen Thanh Dat
+  ID: 3975867   -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="contact.css">
+        <title>Contact Us</title>
+    </head>
+    <body>
+        <div class="main">
+            <header class="header">
+                <div class="grid">
+                    <nav class="navbar">
+                        <!-- Logo -->
+                        <img src="./image/Logo.png" alt="Logo">
+                        <!-- Header Navigation Bar -->
+                        <ul class="list">
+                            <li class="item line">
+                                <a href="./index.html" class="link">Home</a>
+                            </li>
+        
+                            <li class="item line">
+                                <a href="./children_s_book.html" class="link">Children's Books</a>
+                            </li>
+        
+                            <li class="item">
+                                <a href="./non_fiction_book.html" class="link">Non-fiction</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <div class="container">
+                <h1>Contact Us</h1>
+                <!-- Dropdown -->
+                <div class="dropdown">
+                    <h2>Contact purpose</h2>
+                    <select name="Contact purpose" id="dropdown">
+                        <option value="-Select-">-Select-</option>
+                        <option value="I want to sell books">I want to sell books</option>
+                        <option value="I want to buy books">I want to buy books</option>
+                    </select>
+                </div>
+                <!-- Name -->
+                <div class="name">
+                    <h2>Name</h2>
+                    <input type="text" name="name" id="name">
+                </div>
+                <!-- Email -->
+                <div class="email">
+                    <h2>Email</h2>
+                    <input type="email" name="Email" id="email">
+                </div>
+                <!-- Phone -->
+                <div class="phone">
+                    <h2>Phone</h2>
+                    <input type="number" name="phone" id="phone">
+                </div>
+                <!-- CheckBox -->
+                <div class="checkbox">
+                    <h2>Contact preference</h2>
+                    <input type="checkbox" name="preference" value="By phone" id="box">By Phone 
+                    <input type="checkbox" name="preference" value="By email" id="box">By Email
+                </div>
+                <!-- Choose -->
+                <div class="radio">
+                    <h2>Receive weekly newsletter</h2>
+                    <input type="radio" name="newsletter" value="Yes" id="check" checked>Yes
+                    <input type="radio" name="newsletter" value="No" id="check">No
+                </div>
+                <!-- Note -->
+                <div class="notes">
+                    <h2>Extra notes</h2>
+                    <textarea class="note" placeholder="Write your comment..."></textarea>
+                </div>
+                <!-- Button -->
+                <div class="submit">
+                    <input type="submit" value="Submit" id="button">
+                    <input type="reset" value="Reset" id="button">
+                </div>
+            </div>
+
+            <footer class="footer">
+                <nav class="navbar1">
+                    <!-- Footer Navigation Bar -->
+                    <ul class="list">
+                        <li class="item line">
+                            <a href="./about_us.html#About Us" class="link">About Us</a>
+                        </li>
+    
+                        <li class="item line">
+                            <a href="./about_us.html#Privacy Policy" class="link">Privacy Policy</a>
+                        </li>
+
+                        <li class="item line">
+                            <a href="./about_us.html#Terms" class="link">Terms</a>
+                        </li>
+
+                        <li class="item line">
+                            <a href="./about_us.html#Copyright" class="link">Copyright</a>
+                        </li>
+    
+                        <li class="item">
+                            <a href="./contact.html" class="link">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
+    </body>
+</html>

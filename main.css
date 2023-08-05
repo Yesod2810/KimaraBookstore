@@ -1,0 +1,269 @@
+/* RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Nguyen Thanh Dat
+  ID: 3975867
+  Acknowledgement: Youtube */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Roboto&family=Work+Sans:wght@400;500;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F6F4EB;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    height: 70px;
+    background-image: linear-gradient(0, #91C8E4, #749BC2);
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+/* Logo image */
+.navbar img {
+    height: 30px;
+}
+/* Header Setup */
+.header,
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Navigation Bar */
+.list {
+    list-style: none;
+}
+
+.item {
+    margin: 0 12px;
+    position: relative;
+}
+
+.item, .link {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 100;
+    text-decoration: none;
+    color: white;
+}
+
+.item:hover, .link:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.item.line::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 15px;
+    background-color: white;
+    right: -14px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* Breadcrumb */
+.breadcrumb {
+    margin: 20px 20px;
+    padding: 10px 40px;
+    box-shadow: 0 4px 30px -10px rgba(0, 0, 0, 0.5);
+    width: fit-content;
+}
+
+.breadcrumb ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}
+
+.breadcrumb ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.breadcrumb ul li a:hover {
+    color: #749BC2;
+}
+
+.breadcrumb ul li:last-child {
+    font-weight: bold;
+}
+/* Image */
+.image {
+    margin: 0px 20px;
+    display: grid;
+    grid-template-columns: 300px 100px 100px 200px 100px;
+    grid-auto-rows: auto;
+}
+
+.img1 {
+    width: 300px;
+    height: 450px;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.img2 {
+    width: 100px;
+    height: 140px;
+    object-fit: contain;
+}
+
+#one {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#two {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#three {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+/* Price */
+.price {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: #91C8E4;
+}
+/* Button */
+.button {
+    display: flex;
+    justify-content: center;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+#button {
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #91C8E4;
+    border: 1px solid transparent;
+    outline: none;
+}
+/* Description */
+.content {
+    margin: 20px;
+    width: 1200px;
+    font-size: 16px;
+}
+/* Footer Setup */
+.footer {
+    height: 70px;
+    background-image: linear-gradient(0, #91C8E4, #749BC2);
+}
+
+.footer, .navbar1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 739px) {
+    .image {
+        margin: 0px 20px;
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px;
+    }
+    
+    .img1 {
+        width: 300px;
+        height: 400px;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    
+    .img2 {
+        width: 100px;
+        height: 140px;
+        object-fit: contain;
+    }
+    
+    #one {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+    
+    #two {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+    
+    #three {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+    /* Price */
+    .price {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 7;
+        grid-row-end: 8;
+        margin: 0 50px;
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+        color: #91C8E4;
+    }
+    /* Button */
+    .button {
+        display: flex;
+        justify-content: center;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 8;
+        grid-row-end: 9;
+    }
+    
+    #button {
+        width: 120px;
+        height: 50px;
+        border-radius: 10px;
+        font-size: 15px;
+        background-color: #91C8E4;
+        border: 1px solid transparent;
+        outline: none;
+    }
+}
